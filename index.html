@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<title>oDocument</title>
+<link rel='stylesheet' type='text/css' href='lib/prettify/desert.css' />
+<style>
+<!--
+body { padding: 0; margin: 0; font: 15px/26px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; text-align: center; background: #666; letter-spacing: 0.3px; }
+.clear { clear: both; }
+.logo { margin: 20px auto; width: 800px; text-align: left; }
+  .logo_name  {  color: #fff; font-size: 42px; font-weight: bold; text-shadow: 2px 2px 2px #333; }
+  .logo_sub { float: right; }
+    .logo_sub a { color: #fff; font-size: 16px; text-decoration: none; text-shadow: 1px 1px 1px #333; }
+      .logo_sub a:hover { color: #eee; text-decoration: underline; }.container { margin: 0px auto 40px auto;  width: 740px; padding: 20px 30px 30px 30px; text-align: left; text-shadow: 1px 1px 0 #fff; background: #eee; border: 1px solid #fff; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; box-shadow: 2px 2px 5px #333; }
+  .side_bar { float: left; margin-left: -50px; padding-right: 50px; width: 20%; }
+    .navi { margin: 15px 0 0 0; list-style: none; text-align: right; }
+    .navi li { margin: 0 0 16px 0; }
+    .navi a { font-size: 20px; color: #999; text-shadow: 1px 1px 0px #fff; text-decoration: none; }
+    .navi a:hover { color: #000; }
+  .main{ float: left; width: 80%; }
+    .title { margin: 15px 0; font-size: 26px; clear: both; }
+    .content { padding: 0 0 0 26px; }
+    .mail { margin: 2px 10px; color: #666; font-size: 14px; }
+    .feature_list { margin: 0; padding: 0; list-style: none; }
+    .feature_list li { line-height: 26px; }
+    .code { margin: 10px 20px; padding: 10px; font-size: 18px; line-height: 24px; clear: both; background-color: #ccc; border: 1px solid #ccc; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+    .src_label { font-size: 15px; }
+    .src_link { font-size: 20px; }
+    .history_title { display: block; margin: 15px 0 0 0; font-size: 18px; color: #000; clear: both; }
+    .history_time { margin: 2px 8px; font-size: 13px; color: #666; text-shadow: none; }
+    .history { display: block; margin: 5px 0 0 30px; font-size: 15px; line-height: 24px; clear: both; }
+-->
+</style>
+<script language='javascript' type='text/javascript' src='lib/prettify/prettify.js'></script>
+</head>
+
+<body>
+<div class='logo'>
+	<span class='logo_name'>oDocument</span>
+</div>
+<div class='container'>
+	<div class='side_bar'>
+		<ul class='navi'>
+			<li><a href='#about'>关于</a></li>
+			<li><a href='#author'>作者</a></li>
+			<li><a href='#maintainer'>维护人员</a></li>
+			<li><a href='#version'>版本</a></li>
+			<li><a href='#update'>最近更新</a></li>
+			<li><a href='#feature'>特性</a></li>
+			<li><a href='#licence'>开源协议</a></li>
+			<li><a href='#source'>源代码</a></li>
+			<li><a href='#download'>下载</a></li>
+			<li><a href='#usage'>使用方法</a></li>
+			<li><a href='#demo'>Demo</a></li>
+			<li><a href='#history'>修改历史</a></li>
+		</ul>
+	</div>
+	<div class='main'>
+		<a name='about'></a>
+		<div class='title'>关于</div>
+		<div class='content'>一个方便实用的开发文档模版</div>
+		<a name='author'></a>
+		<div class='title'>作者</div>
+		<div class='content'>博汇数码EasyTrace团队</span></div>
+		<a name='maintainer'></a>
+		<div class='title'>维护人员</div>
+		<div class='content'>nino zhang<span class='mail'>(ninozhang@foxmail.com)</span></div>
+		<a name='version'></a>
+		<div class='title'>版本</div>
+		<div class='content'>0.0.2 beta</div>
+		<a name='update'></a>
+		<div class='title'>最近更新</div>
+		<div class='content'>2011/7/28</div>
+		<a name='feature'></a>
+		<div class='title'>特性</div>
+		<div class='content'>
+			<ul class='feature_list'>
+				<li>简易的配置即可实现完善的开发文档</li>
+				<li>极速响应，无需等待</li>
+				<li>支持代码高亮</li>
+				<li>清新的界面风格</li>
+				<li>可通过修改CSS实现个性化外观</li>
+				<li>兼容多种浏览器（Chrome、Safari、Firefox、Opera、IE）</li>
+			</ul>
+		</div>
+		<a name='licence'></a>
+		<div class='title'>开源协议</div>
+		<div class='content'>MIT</div>
+		<a name='source'></a>
+		<div class='title'>源代码</div>
+		<div class='content'><span class='src_label'>托管在GitHub：</span><a href='https://github.com/ninozhang/oDocument' class='src_link'>https://github.com/ninozhang/oDocument</a></div>
+		<a name='download'></a>
+		<div class='title'>下载</div>
+		<div class='content'><a href='https://github.com/ninozhang/oDocument/downloads' class='src_link'>https://github.com/ninozhang/oDocument/downloads</a></div>
+		<a name='usage'></a>
+		<div class='title'>使用方法</div>
+		<div class='content'>修改oDocument.json文件内容即可</div>
+		<a name='demo'></a>
+		<div class='title'>Demo</div>
+		<div class='content'>
+			<a href='http://61.145.126.45/oDocument/src/oDocument.html' class='src_link'>查看Demo</a>
+		</div>
+		<a name='history'></a>
+		<div class='title'>修改历史</div>
+		<div class='content'>
+			<span class='history_title'>0.0.2 beta
+				<span class='history_time'>2011/7/28 星期四</span>
+			</span>
+			<span class='history'>
+				第一个比较完善的测试版<br />
+				实现基本的文档功能
+			</span>
+		</div>
+	</div>
+	<div class='clear'></div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24589740-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

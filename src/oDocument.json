@@ -1,0 +1,210 @@
+{
+	"index": {
+		"label": "首页",
+		"content": {
+			"intro": {
+				"label": "介绍",
+				"text": "系统简要介绍",
+				"content": {
+					"p1": {
+						"label": "系统简介",
+						"text": "..."
+					},
+					"p2": {
+						"label": "开放平台",
+						"text": "..."
+					},
+					"p3": {
+						"label": "开发环境要求",
+						"text": "..."
+					}
+				}
+			},
+			"version": {
+				"label": "文档版本",
+				"text": "本文档的版本状态",
+				"content": {
+					"ver": {
+						"label": "版本号",
+						"text": "1.0"
+					},
+					"update": {
+						"label": "更新日期",
+						"text": "2011-07-28 16:03"
+					},
+					"maintainer": {
+						"label": "维护人员",
+						"text": "nino (ninozhang@foxmail.com)"
+					},
+					"content": {
+						"label": "更新内容",
+						"text": "..."
+					},
+					"history": {
+						"label": "修改历史",
+						"text": "<a href='#help/changelog'>修改历史</a>"
+					}
+				}
+			},
+			"license": {
+				"label": "协议",
+				"text": "开发者服务协议",
+				"content": {
+					"p": {
+						"label": "协议内容",
+						"text": "开发者服务协议"
+					}
+				}
+			}
+		}
+	},
+	"api": {
+		"label": "API文档",
+		"root": "http://localhost/",
+		"content": {
+			"user": {
+				"label": "用户",
+				"text": "用户相关接口",
+				"content": {
+					"signin": {
+						"text": "用户登录验证",
+						"updateTime": "2011-7-27 16:34 星期三",
+						"request": {
+							"label": "请求",
+							"method": "GET",
+							"parameters": [
+								{
+									"field": "format",
+									"required": true,
+									"text": "指定返回的格式",
+									"acceptValue": "xml | json",
+									"defaultValue": "json"
+								},
+								{
+									"field": "user",
+									"required": true,
+									"text": "用户名",
+									"acceptValue": "所有英文字符、中文字符和数字",
+									"sampleValue": "nino"
+								},
+								{
+									"field": "password",
+									"required": true,
+									"text": "密码",
+									"acceptValue": "所有字符",
+									"sampleValue": "123"
+								},
+								{
+									"field": "auto",
+									"required": false,
+									"text": "是否自动登录，true时为自动登录，false时为不自动登录，留空默认为false",
+									"acceptValue": "true | false",
+									"defaultValue": "false"
+								}
+							],
+							"sample": "?format=json&user=nino&password=123"
+						},
+						"response": {
+							"label": "返回结果",
+							"sample": "true"
+						}
+					},
+					"info": {
+						"text": "获取用户信息"
+					},
+					"update": {
+						"text": "更新用户信息"
+					},
+					"signout": {
+						"text": "用户注销"
+					}
+				}
+			},
+			"timeline": {
+				"label": "时间线",
+				"text": "系统介绍",
+				"content": {
+					"home": {
+						"text": "获取自己的消息"
+					},
+					"public": {
+						"text": "获取公共消息"
+					},
+					"user": {
+						"text": "获取其他用户的消息"
+					}
+				}
+			},
+			"friends": {
+				"label": "用户关系",
+				"text": "用户关系接口",
+				"content": {
+					"follow": {
+						"text": "关注某个用户"
+					},
+					"unfollow": {
+						"text": "取消对某个用户的关注"
+					}
+				}
+			}
+		}
+	},
+	"res": {
+		"label": "资源",
+		"content": {
+			"logo": {
+				"label": "Logo",
+				"text": "提供系统图标资源"
+			},
+			"assets": {
+				"label": "素材",
+				"text": "提供标准视觉素材"
+			},
+			"SDK": {
+				"label": "SDK下载",
+				"text": "提供辅助开发者快速完成开发的资源包"
+			},
+			"debug": {
+				"label": "API调试工具",
+				"text": "提供帮助开发者验证和测试API的状况"
+			},
+			"downloads": {
+				"label": "其他下载",
+				"text": "提供其他资源下载"
+			}
+		}
+	},
+	"help": {
+		"label": "帮助",
+		"content": {
+			"faq": {
+				"label": "FAQ",
+				"text": "常见问题及解答",
+				"content": {}
+			},
+			"maintainer": {
+				"label": "维护人员",
+				"text": "API以及文档的维护人员",
+				"content": {}
+			},
+			"changelog": {
+				"label": "修改历史",
+				"text": "API以及文档的修改历史",
+				"content": {
+					"0.0.2beta": {
+						"label": "0.0.2 beta 2011-07-28 16:16",
+						"text": "..."
+					},
+					"0.0.1beta": {
+						"label": "0.0.1 beta 2001-07-27 23:36",
+						"text": "..."
+					},
+					"0.0.1alpha": {
+						"label": "0.0.1 alpha 2011-07-26",
+						"text": "..."
+					}
+				}
+			}
+		}
+	}
+}
